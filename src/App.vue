@@ -1,11 +1,7 @@
 <template>
   <div>
     <Navbar/>
-    <router-view></router-view>
-    <font-awesome-icon icon="fa-solid fa-arrow-left-long" />
-    <font-awesome-icon icon="fa-solid fa-moon" />
-    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-    <font-awesome-icon icon="fa-solid fa-angle-down" />
+    <router-view class="p-5"></router-view>
   </div>
 </template>
 

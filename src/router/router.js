@@ -4,7 +4,7 @@ import Detail from "../views/Detail.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
-  { path: "/detail", name: "Detail", component: Detail },
+  { path: "/detail/:id", name: "Detail", props: true, component: Detail },
 ];
 
 const history = createWebHistory();
