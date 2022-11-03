@@ -8,6 +8,9 @@ export default {
   get() {
     return axios.get(API);
   },
+  getCountry(name) {
+    return axios.get(API_COUNTRY + name);
+  },
   getByCountry(name) {
     return axios.get(API_COUNTRY + name);
   },

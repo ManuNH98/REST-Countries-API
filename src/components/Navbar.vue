@@ -3,7 +3,7 @@
         <router-link to="/">
             <h1 class="font-bold">Where in the world?</h1>
         </router-link>
-        <button class="flex items-center gap-x-2">
+        <button @click="isDarkMode = !isDarkMode" class="flex items-center gap-x-2">
             <font-awesome-icon icon="fa-solid fa-moon" />
             <p class="font-semi_bold">Dark Mode</p>
         </button>
@@ -11,5 +11,13 @@
 </template>
 
 <script>
-
+import { toggleDarkMode } from '../utils/darkMode'
+export default{
+    name: "Navbar",
+    data(){
+        return {
+            isDarkMode: false
+        }
+    }
+}
 </script>
