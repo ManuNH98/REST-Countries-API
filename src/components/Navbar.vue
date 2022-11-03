@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between items-center px-5 py-7 shadow-md dark:bg-dark_blue dark:text-white">
+    <div class="flex justify-between items-center px-5 py-7 desktop:px-16 shadow-md dark:bg-dark_blue dark:text-white">
         <router-link to="/">
             <h1 class="font-bold">Where in the world?</h1>
         </router-link>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar/>
-    <router-view class="p-5"></router-view>
+    <router-view class="p-5 desktop:p-16"></router-view>
   </div>
 </template>
 
