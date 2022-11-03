@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-very_light_gray_bg py-10">
-        <button @click="$router.go(-1)" class="flex items-center bg-white shadow-lg px-6 py-1 mb-20"  aria-label="back" >
+    <div class="bg-very_light_gray_bg dark:bg-very_dark_blue_bg dark:text-white  py-10">
+        <button @click="$router.go(-1)" class="flex items-center bg-white dark:bg-dark_blue dark:text-white shadow-lg px-6 py-1 mb-20"  aria-label="back" >
             <font-awesome-icon icon="fa-solid fa-arrow-left-long"/>
             <span class="pl-2">Back</span>
         </button>
@@ -43,8 +43,8 @@
                 <div class="flex flex-col gap-y-3">
                     <h3 class="font-bold text-xl mb-3">Border Countries</h3>
                     <div class="flex justify-between flex-wrap">
-                        <div v-for="border in bordersFullName" :key="border" class="w-1/3 text-center ">
-                            <p class="py-1.5 m-2 bg-white">{{ border }}</p>
+                        <div v-for="border in bordersFullName" :key="border" class="w-1/3 text-center">
+                            <p class="py-1.5 m-2 bg-white dark:bg-dark_blue dark:text-white shadow-md">{{ border }}</p>
                         </div>
                     </div>
                 </div>
