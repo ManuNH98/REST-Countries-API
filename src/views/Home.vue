@@ -2,10 +2,10 @@
     <div class="bg-very_light_gray_bg dark:bg-very_dark_blue_bg">
         <div class="flex flex-col gap-y-10 pb-5">
             <div id="search" class="bg-white">
-                    <div class="flex items-center p-5 px-7 gap-x-5 rounded-md shadow-md">
-                        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-                        <input placeholder="Search for a country..." type="text" :value="search" @input="filter => search = filter.target.value"/>
-                    </div>
+                <div class="flex items-center p-5 px-7 gap-x-5 rounded-md shadow-md">
+                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                    <input placeholder="Search for a country..." type="text" :value="search" @input="filter => search = filter.target.value"/>
+                </div>
             </div>
             <div id="dropdown">
                 <button @click="showFilter = !showFilter" class="flex justify-between items-start bg-white p-5 rounded-md shadow-md w-3/5">Filter by Region <span><font-awesome-icon icon="fa-solid fa-angle-down" /></span></button>
@@ -21,7 +21,7 @@
                 <router-link :to="{name:'Detail', params: {id: country.name}}">
                     <img :src="country.flags.svg" :alt="country.name" class="rounded-t-md">
                     <div class="p-7 pb-10">
-                        <h2 class="font-bold text-xl pb-3">{{ country.name }}</h2>
+                        <h2 class="font-bold text-xl mb-3">{{ country.name }}</h2>
                         <p><span class="font-bold">Population: </span>{{ country.population.toLocaleString('en-US') }}</p>
                         <p><span class="font-bold">Region: </span>{{ country.region }}</p>
                         <p><span class="font-bold">Capital: </span>{{ country.capital }}</p>
